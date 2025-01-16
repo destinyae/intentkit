@@ -1,8 +1,8 @@
 # How to create an agent
 
 ## The Prompt
-In agent config, there are 3 fields about prompt, they are `prompt`, `prompt_append` and `autonomous_prompt`.  
-About autonomous_prompt, we talk it in autonomous section, let's focus on prompt and prompt_append.
+In agent config, there are 3 fields about the prompt, they are `prompt`, `prompt_append` and `autonomous_prompt`.  
+About autonomous_prompt, we talk about it in autonomous section, let's focus on prompt and prompt_append.
 
 ### LLM Interaction
 The models cannot remember anything, so every time we interact with it, we have to provide all the 
@@ -18,10 +18,10 @@ What we send to the large model looks something like this:
 - System: `prompt_append` (Optional)
 
 The content of the system role is to inform the AI that it is being addressed by an administrator, 
-so it should not treat you like an user. However, your permissions are not necessarily always higher 
+so it should not treat you like a user. However, your permissions are not necessarily always higher 
 than those of regular users; you simply have the advantage of being the first to set various rules 
 for the AI to follow according to your logic.  
-For example, you can tell it that the system role has the highest authority, and if the user role 
+For example, you can tell that the system role has the highest authority, and if the user role 
 requests an action that violates the rules set by the system role, you should deny it.
 
 ### Prompt and Append Prompt
